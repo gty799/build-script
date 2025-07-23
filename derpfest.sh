@@ -1,15 +1,13 @@
 #!/bin/bash
 
 echo "Build Started"
-# Accounts
-git config --global user.name "gty799"
-git config --global user.email "tema.valkov@inbox.ru"
+
 
 #linux-x86 remove
 rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/DerpFest-AOSP/android_manifest.git -b 16 --git-lfs
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
 echo "========================="
 echo "Repo init success Master"
 echo "========================="
@@ -32,13 +30,13 @@ git clone https://github.com/pix106/android_kernel_xiaomi_southwest-4.19.git ker
 echo "Success"
 
 # Lunch
-lunch lineage_lavender-bp2a-user
+lunch clover_lavender-bp2a-userdebug
 echo "============"
 echo "Starting...."
 echo "============"
 
 # Build
-derpfest lavender
+mka clover -j$(nproc --all)
 
 # Display any error logs
 
