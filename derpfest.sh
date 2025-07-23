@@ -23,7 +23,7 @@ echo "=============================="
 git clone https://github.com/gty799/Aeonjxx-device_xiaomi_lavender-4.19.git device/xiaomi/lavender
 git clone https://github.com/gty799/Aeonixx-vendor_xiaomi_lavender-4.19.git vendor/xiaomi/lavender
 git clone https://github.com/pix106/android_kernel_xiaomi_southwest-4.19.git kernel/xiaomi/lavender
-git clone https://github.com/yaap/hardware_xiaomi.git hardware/xiaomi
+git clone https://github.com/TheCloverProject-Devices/hardware_xiaomi.git hardware/xiaomi
 
 #keys 
 
