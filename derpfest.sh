@@ -20,6 +20,15 @@ echo "Master the Sync is now Success"
 echo "=============================="
 
 # Sync Trees
+rm -rf device/xiaomi/lavender
+rm -rf vendor/xiaomi/lavender
+rm -rf kernel/xiaomi/sdm660
+rm -rf kernel/xiaomi/lavender
+rm -rf hardware/xiaomi
+rm -rf device/xiaomi/sdm660-common
+rm -rf vendor/xiaomi/sdm660-common
+echo "Succefull delete tree"
+
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b clover16 device/xiaomi/lavender
 git clone https://github.com/pix106/android_vendor_xiaomi_lavender.git -b 16 vendor/xiaomi/lavender
 git clone https://github.com/mitmac29/android_kernel_xiaomi_southwest-4.19.git -b main-dynamic kernel/xiaomi/sdm660
