@@ -24,6 +24,8 @@ git clone https://github.com/gty799/Aeonjxx-device_xiaomi_lavender-4.19.git devi
 git clone https://github.com/gty799/Aeonixx-vendor_xiaomi_lavender-4.19.git vendor/xiaomi/lavender
 git clone https://github.com/pix106/android_kernel_xiaomi_southwest-4.19.git kernel/xiaomi/lavender
 git clone https://github.com/gty799/android_hardware_xiaomi.git hardware/xiaomi
+git clone https://github.com/mitmac29/android_device_xiaomi_sdm660-common.git -b clover16 device/xiaomi/sdm660-common
+git clone https://github.com/pix106/android_vendor_xiaomi_sdm660-common.git -b 16 vendor/xiaomi/sdm660-common
 
 #keys 
 
