@@ -32,7 +32,7 @@ echo "Succefull delete tree"
 
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b clover16 device/xiaomi/lavender
 git clone https://github.com/gty799/android_vendor_xiaomi_lavender.git -b 16 vendor/xiaomi/lavender
-git clone https://github.com/mitmac29/android_kernel_xiaomi_southwest-4.19.git -b main-dynamic kernel/xiaomi/sdm660
+git clone https://github.com/gty799/android_kernel_xiaomi_southwest-4.19.git -b main-dynamic kernel/xiaomi/sdm660
 git clone https://github.com/gty799/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
 git clone https://github.com/gty799/android_device_xiaomi_sdm660-common.git -b clover16 device/xiaomi/sdm660-common
 git clone https://github.com/gty799/android_vendor_xiaomi_sdm660-common.git -b 16 vendor/xiaomi/sdm660-common
