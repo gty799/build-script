@@ -28,6 +28,7 @@ rm -rf hardware/xiaomi
 rm -rf device/xiaomi/sdm660-common
 rm -rf vendor/xiaomi/sdm660-common
 rm -rf kernel/xiaomi
+rm -rf packages/apps/ViPER4AndroidFX
 echo "Succefull delete tree"
 
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b clover16 device/xiaomi/lavender
