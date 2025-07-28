@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 echo "Build Started"
@@ -30,7 +31,7 @@ rm -rf vendor/xiaomi/sdm660-common
 rm -rf kernel/xiaomi
 rm -rf packages/apps/ViPER4AndroidFX
 rm -rf hardware/qcom-caf/sdm660/audio
-rm -rf hardware/qcom-caf/camera
+rm -rf hardware/qcom-caf/sdm660/display
 echo "Succefull delete tree"
 
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b clover16 device/xiaomi/lavender
@@ -41,9 +42,9 @@ git clone https://github.com/gty799/android_device_xiaomi_sdm660-common.git -b c
 git clone https://github.com/gty799/android_vendor_xiaomi_sdm660-common.git -b 16 vendor/xiaomi/sdm660-common
 git clone https://github.com/gty799/android_hardware_qcom-caf_audio.git -b lineage-22.2 hardware/qcom-caf/sdm660/audio
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
-git clone https://github.com/pix106/android_hardware_qcom-caf_camera.git -b sdm660-4.19-12.2.1.r1-clover hardware/qcom-caf/camera
-#keys 
-d
+git clone https://github.com/pix106/android_hardware_qcom-caf_display -b lineage-22.2-caf-sdm660 hardware/qcom-caf/sdm660/display
+#keys a
+
 # Setup the build environment 
 . build/envsetup.sh
 echo "Success"
