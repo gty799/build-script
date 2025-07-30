@@ -8,7 +8,7 @@ echo "Build Started"
 rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/android_manifest -b sixteen --git-lfs
 echo "========================="
 echo "Repo init success Master"
 echo "========================="
@@ -50,13 +50,13 @@ git clone https://github.com/pix106/android_hardware_qcom-caf_display -b lineage
 echo "Success"
 
 # Lunch
-lunch aosp_lavender-bp2a-userdebug
+lunch aosp_lavender-user
 echo "============"
 echo "Starting...."
 echo "============"
 
 # Build
-mka clover
+mka bacon
 
 # Display any error logs
 
