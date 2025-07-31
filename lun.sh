@@ -32,6 +32,7 @@ rm -rf kernel/xiaomi
 rm -rf packages/apps/ViPER4AndroidFX
 rm -rf hardware/qcom-caf/sdm660/audio
 rm -rf hardware/qcom-caf/sdm660/display
+rm -rf packages/apps/prebuilt
 echo "Succefull delete tree"
 
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b lunaris device/xiaomi/lavender
