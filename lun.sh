@@ -8,7 +8,7 @@ echo "Build Started"
 rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/PixelOS-AOSP/android_manifest -b sixteen --git-lfs
+repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
 echo "========================="
 echo "Repo init success Master"
 echo "========================="
@@ -34,11 +34,11 @@ rm -rf hardware/qcom-caf/sdm660/audio
 rm -rf hardware/qcom-caf/sdm660/display
 echo "Succefull delete tree"
 
-git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b aosp device/xiaomi/lavender
+git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b lunaris device/xiaomi/lavender
 git clone https://github.com/gty799/android_vendor_xiaomi_lavender.git -b 16 vendor/xiaomi/lavender
 git clone https://github.com/gty799/android_kernel_xiaomi_southwest-4.19.git -b main-dynamic kernel/xiaomi/sdm660
 git clone https://github.com/gty799/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
-git clone https://github.com/gty799/android_device_xiaomi_sdm660-common.git -b aosp16 device/xiaomi/sdm660-common
+git clone https://github.com/gty799/android_device_xiaomi_sdm660-common.git -b lunaris device/xiaomi/sdm660-common
 git clone https://github.com/gty799/android_vendor_xiaomi_sdm660-common.git -b 16 vendor/xiaomi/sdm660-common
 git clone https://github.com/pix106/android_hardware_qcom-caf_audio.git -b lineage-22.2 hardware/qcom-caf/sdm660/audio
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
@@ -50,15 +50,10 @@ git clone https://github.com/pix106/android_hardware_qcom-caf_display -b lineage
 echo "Success"
 
 # Lunch
-lunch aosp_lavender-user
+lunch lineage_lavender-bp2a-user
 echo "============"
 echo "Starting...."
 echo "============"
 
 # Build
-mka bacon
-
-# Display any error logs
-
-echo "Here is your error"
-cat out/error.log
+m lunaris
