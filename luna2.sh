@@ -3,7 +3,7 @@
 echo "Build Started"
  
 git config --global user.name "gty799"
-git config --global user.email "tema.valkov@inbox
+git config --global user.email "tema.valkov@inbox.ru"
 
 git-lfs install
 
