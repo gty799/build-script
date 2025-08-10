@@ -2,10 +2,7 @@
 #!/bin/bash
 
 echo "Build Started"
-
-#linux-x86 remove
-rm -rf prebuilts/clang/host/linux-x86 
-
+ 
 git config --global user.name "gty799"
 git config --global user.email "tema.valkov@inbox
 
