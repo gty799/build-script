@@ -3,7 +3,6 @@
 
 echo "Build Started"
 
-
 #linux-x86 remove
 rm -rf prebuilts/clang/host/linux-x86 
 
@@ -11,7 +10,6 @@ git config --global user.name "gty799"
 git config --global user.email "tema.valkov@inbox
 
 git-lfs install
-
 
 # repo init rom
 repo init -u https://github.com/Lunaris-AOSP/android -b 16 --git-lfs
