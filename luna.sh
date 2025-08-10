@@ -51,15 +51,3 @@ git clone https://github.com/pix106/android_hardware_qcom-caf_display -b lineage
 git clone https://github.com/Drpto/packages_apps_prebuilt-camera.git packages/apps/prebuilt
 #keys a
 
-# Setup the build environment 
-. build/envsetup.sh
-echo "Success"
-
-# Lunch
-# lunch lineage_lavender-bp2a-user
-echo "============"
-echo "Starting...."
-echo "============"
-
-# Build
-# m lunaris
