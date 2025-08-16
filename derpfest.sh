@@ -5,17 +5,17 @@ echo "Build Started"
 
 
 #linux-x86 remove
-rm -rf prebuilts/clang/host/linux-x86
+# rm -rf prebuilts/clang/host/linux-x86
 
 # repo init rom
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
+# repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
 echo "========================="
 echo "Repo init success Master"
 echo "========================="
 
 # Build Sync
-/opt/crave/resync.sh
-repo sync
+# /opt/crave/resync.sh
+# repo sync
 echo "=============================="
 echo "Master the Sync is now Success"
 echo "=============================="
@@ -36,7 +36,7 @@ echo "Succefull delete tree"
 
 git clone https://github.com/gty799/android_device_xiaomi_lavender.git -b clover16 device/xiaomi/lavender
 git clone https://github.com/gty799/android_vendor_xiaomi_lavender.git -b 16 vendor/xiaomi/lavender
-git clone https://github.com/gty799/android_kernel_xiaomi_southwest-4.19.git -b main-dynamic kernel/xiaomi/sdm660
+git clone https://github.com/RarogCmex/android_kernel_xiaomi_southwest-4.19 -b main-dynamic kernel/xiaomi/sdm660
 git clone https://github.com/gty799/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
 git clone https://github.com/gty799/android_device_xiaomi_sdm660-common.git -b clover16 device/xiaomi/sdm660-common
 git clone https://github.com/gty799/android_vendor_xiaomi_sdm660-common.git -b 16 vendor/xiaomi/sdm660-common
@@ -56,7 +56,7 @@ echo "Starting...."
 echo "============"
 
 # Build
-mka clover
+mka clover -j99
 
 # Display any error logs
 
