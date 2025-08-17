@@ -43,6 +43,7 @@ git clone https://github.com/gty799/android_vendor_xiaomi_sdm660-common.git -b 1
 git clone https://github.com/pix106/android_hardware_qcom-caf_audio.git -b lineage-22.2 hardware/qcom-caf/sdm660/audio
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
 git clone https://github.com/pix106/android_hardware_qcom-caf_display -b lineage-22.2-caf-sdm660 hardware/qcom-caf/sdm660/display
+git clone https://github.com/Drpto/packages_apps_prebuilt-camera.git packages/apps/prebuilt
 #keys a
 
 # Setup the build environment 
